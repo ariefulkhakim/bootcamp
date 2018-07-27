@@ -1,0 +1,47 @@
+git init
+
+git add
+
+git commit -m "pesan berubah"
+
+git push
+
+git -h
+
+git status
+
+git log
+
+git branch
+
+git checkout
+
+git pull
+
+git fetch 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pwd (sekarang kita dimana)
+cd (pindah folder)
+ls (menampilkan list)
+cd .. (keluar ke folder sebelumnya)
+mkdir(bikin folder)
+touch (buat file)

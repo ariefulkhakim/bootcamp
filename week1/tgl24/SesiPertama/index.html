@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- CSS CUSTOM -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#563d7c">
+        <a class="navbar-brand" href="#">
+            <svg class="d-block" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <title>Bootstrap</title>
+                <path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
+                <path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
+            </svg>
+        </a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Themes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Expo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-outline-warning">Download</button>
+        </div>
+    </nav>
+    <!-- JUMBROTON -->
+    <div class="jumbotron jumbotron-fluid bg-white" style="padding:6rem 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4" style="color:#563d7c;">Bootstrap</h1>
+                    <p class="lead">
+                        Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+                        <br>
+                        <br> Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your
+                        ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive
+                        prebuilt components, and powerful plugins built on jQuery.
+                    </p>
+                    <button type="button" class="btn btn-lg btn-outline-dark mr-2">Get started</button>
+                    <button type="button" class="btn btn-lg btn-outline-dark">Download</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png" class="w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTAIN -->
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <div class="col-md-4 p-3 p-md-5 border border-white">
+                <svg xmlns="http://www.w3.org/2000/svg" focusable="false" width="32" height="32" fill="none" stroke="currentcolor" stroke-width="2"
+                    class="text-primary mb-2" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round">
+                    <title>Import icon</title>
+                    <path d="M28 22v8H4v-8M16 4v20m-8-8l8 8 8-8"></path>
+                </svg>
+                <h3>Installation</h3>
+                <p>
+                    Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don't include
+                    documentation, but do include our build system and readme.
+                </p>
+                <hr style="width: 6rem; margin: 2.5rem 0;">
+                <button type="button" class="btn btn-outline-primary">Read installation docs</button>
+            </div>
+            <div class="col-md-4 p-3 p-md-5 border border-white">
+                <svg xmlns="http://www.w3.org/2000/svg" focusable="false" width="32" height="32" fill="none" stroke="currentcolor" stroke-width="2"
+                    class="text-primary mb-2" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round">
+                    <title>Download icon</title>
+                    <path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4 5-4m-5-10v14"></path>
+                </svg>
+                <h3>BootstrapCDN</h3>
+                <p>When you only need to include Bootstrap's compiled CSS or JS, you can use BootstrapCDN.</p>
+                <hr style="width: 6rem; margin: 2.5rem 0;">
+                <button type="button" class="btn btn-outline-primary">Explore the docs</button>
+            </div>
+            <div class="col-md-4 p-3 p-md-5 border border-white">
+                <svg xmlns="http://www.w3.org/2000/svg" focusable="false" width="32" height="32" fill="none" stroke="currentcolor" stroke-width="2"
+                    class="text-primary mb-2" viewBox="0 0 32 32" stroke-linecap="round" stroke-linejoin="round">
+                    <title>Lightning icon</title>
+                    <path d="M18 13l8-11L8 13l6 6-8 11 18-11z"></path>
+                </svg>
+                <h3>Official Themes</h3>
+                <p>Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components
+                    and plugins, docs, and build tools.</p>
+                <img class="img-fluid mt-3 mx-auto" src="image/bootstrap-themes.png" alt="Bootstrap Themes">
+                <hr style="width: 6rem; margin: 2.5rem 0;">
+                <button type="button" class="btn btn-outline-primary">Browse themes</button>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-light">
+        <div class="container-fluid px-5 py-4">
+            <ul style="display: flex; list-style: none; padding-left:0;">
+                <li class="mr-2">
+                    <a href="#" style="color: #555; font-size: 14px;">Github</a>
+                </li>
+                <li class="mr-2">
+                    <a href="#" style="color: #555; font-size: 14px;">Twitter</a>
+                </li>
+                <li class="mr-2">
+                    <a href="#" style="color: #555; font-size: 14px;">Examples</a>
+                </li>
+                <li class="mr-2">
+                    <a href="#" style="color: #555; font-size: 14px;">About</a>
+                </li>
+            </ul>
+            <p class="mb-0" style="color: #555; font-size: 14px;">Designed and built with all the love in the world by @mdo and @fat. Maintained by the core team with the help
+                of our contributors</p>
+            <p style="color: #555; font-size: 14px;">Currently v4.1.2. Code licensed MIT, docs CC BY 3.0.</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

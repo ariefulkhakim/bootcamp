@@ -1,0 +1,92 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+.logo {
+  width: 46px;
+  height: 50px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url("../images/28am9fs.jpg");
+  background-size: cover;
+  color: #ffffff;
+  min-height: 400px;
+}
+
+.jumbo-class {
+  padding-top: 2em;
+}
+
+.lead-btn {
+  margin-top: 2em;
+}
+
+/* Content */
+.content,
+.content-kilat,
+.content-info {
+  position: relative;
+  padding: 3em 0;
+}
+
+.content-kilat,
+.content-info {
+  border-top-width: 1px;
+  border-top-color: #eee;
+  border-top-style: solid;
+}
+
+.content-kilat {
+  background-color: #fafafa;
+}
+
+.heading h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+ul.card-code {
+  padding: 1.25rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul.card-code li {
+  display: inline-block;
+}
+
+ul.card-code li a {
+  font-size: 13px;
+  color: #666666;
+}
+
+.small-text {
+  font-size: 13px;
+  color: red;
+  padding-left: 100px;
+}
+
+.content-footer {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.bg-green {
+  background-color: #0bc72a;
+  color: #ffffff;
+}
+
+.content-group {
+  text-align: center;
+  padding: 4em 0;
+}

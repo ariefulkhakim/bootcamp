@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="judul">Daftar Pemain Bola</h1>
+    <input type="text" id="isi-form" />
+    <button id="btn-form">Simpan</button>
+    <br />
+    <br />
+    <ul id="list-item">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+</body>
+<script>
+    const judulDOM = document.getElementById('judul');
+    judulDOM.innerHTML = "Pemain SepakBola";
+    const formDom = document.getElementById('isi-form');
+
+    // Buatlah variable DOM yang mengarah ke 
+
+    const listDom = document.getElementById('list-item');
+
+    const buttonDom = document.getElementById('btn-form');
+
+
+    let dataPemain = []
+
+    //1 jika diklik
+    buttonDom.addEventListener('click', function () {
+        // 2 ngeget data
+        // 3 Menyimpan Data
+        const data = formDom.value
+
+        dataPemain.push(data)
+        // 4 Menambah Data
+        listDom.innerHTML = listDom.innerHTML + "<li>" + data + "</li>"
+        // 5 input valuenya kosong
+        formDom.value = "";
+
+        localStorage.setItem("dataBaru", JSON.stringify(dataPemain))
+
+        tampilkan();
+    })
+    function tampilkan() {
+        let list = ''
+        for (let i = 0; i < dataPemain.length; i++) {
+            const element = array[i];
+        }
+    }
+
+</script>
+
+</html>

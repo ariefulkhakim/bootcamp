@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <style>
+        .list-group-item:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center" style="color: red">Daftar Makanan</h1>
+        <input id="input-makanan" placeholder="Masukkan Nama"/>
+        <button id="button">Tambah</button>
+        <br /> <br />
+        <ul id="list" class="list-group">
+        </ul>
+    </div>
+    
+    <script>
+    
+
+        let data = [];
+        
+        localData = JSON.parse(localStorage.getItem('data'));
+        if(localData != null){
+            data = localData;
+        }
+        
+
+        const inputDOM = document.getElementById('input-makanan');
+
+        // TODO
+        // buatlah variabel DOM untuk mengakses button
+        const buttonDOM = document.getElementById('button');      
+
+        // buatlah variabel DOM untuk mengakses ol
+        const listDOM = document.getElementById('list');
+
+        // listDOM.innerHTML = localStorage.getItem('data');
+
+        buttonDOM.addEventListener('click', function(){
+            const makanan = inputDOM.value;
+            data.push(makanan);
+            render();
+            // listDOM.innerHTML = listDOM.innerHTML + "<li>" + makanan + "</li>";
+            inputDOM.value = "";
+            localStorage.setItem('data', JSON.stringify(data));
+            // alert('hello');
+            
+        });
+
+        function render(){
+            let html = "";
+            for(var i = 0; i < data.length; i++){
+                // html = html + "<li>" + data[i] + "</li>";
+                html = html + `<li class="list-group-item" onClick="remove(${i})">${data[i]}</li>`;
+            }
+
+            listDOM.innerHTML = html;
+        }
+
+        render();
+
+
+        function remove(id){
+            data.splice(id, 1);
+            localStorage.setItem('data', JSON.stringify(data));
+            render();
+        }
+
+     
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+Execuation Context
+Single Thread
+
+Let 
+
+Global Memory 
+Local Thread
+Global Thread
+Call Stack
+
+function 
+parameter : 
+args : value parameter
+
+Call Stack tau posisi 
+
+Array index
+Object val dan key
+
+bahasa pe
+ High Order Function / Pure Function
+ DRY (dont Replace Yourself)
